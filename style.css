@@ -24,11 +24,6 @@ html {
 }
 
 /* icons */
-.logo{
-    /* background-image: url("content/icons/ic_logo.svg"); */
-    /* width: 95px; */
-    /* height: 51px; */
-}
 
 .ic_burger{background-image: url("content/icons/ic_burger.svg");}
 .ic_call{background-image: url("content/icons/ic_call.svg");}
