@@ -125,6 +125,7 @@ a {font-weight: 500;}
 
 /* main */
 .wrapper__main-list > li {
+  user-select: none;
   padding-block: 1rem;
 }
 
