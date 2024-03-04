@@ -148,6 +148,10 @@ a {font-weight: 500;}
   transition:transform 0.7s;
 }
 
+@media (min-width: 1568px) {
+  .btn--expand {display: none}  
+}
+
 /* SWIPER POOPER */
 .brand-block__swiper{
   display: none; 
@@ -175,4 +179,3 @@ a {font-weight: 500;}
   display: initial;
 }
 }
-  
