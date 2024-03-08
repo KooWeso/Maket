@@ -154,6 +154,7 @@ a {font-weight: 500;}
 
 /* SWIPER POOPER */
 .brand-block__swiper{
+  margin-inline: calc(var(--space) * -1);
   display: none; 
 }
 @media (max-width: 765px) {
