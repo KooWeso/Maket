@@ -142,26 +142,27 @@ a {font-weight: 500;}
   margin-bottom: 2rem;
 }
 /* ANIMATIONS */
-/* Maybe use later for all*/
-.wrapper *{transition: all 0.5s ease-in-out;}
-.wrapper button:not(.btn--burger-opened, .--active){transition: all 0.2s linear;}
-
+/* don't use later for all*/
+.wrapper button:not(.btn--burger-opened, .--active){transition: opacity 0.2s ease-in-out, scale 0.2s ease-in-out;}
+.wrapper .btn--burger-opened {transition: transform 0.7s ease-in-out;}
 .wrapper button:not(.btn--burger-opened,.--active):hover {opacity: 80%;}
 .wrapper button:not(.btn--burger-opened,.--active):active {opacity: 50%; scale: 0.95;}
-/* Maybe use later for all*/
+/* don't use later for all*/
 
 
 
 
 /* list items */
-.wrapper__main-list > li:not(.wrapper__main-list-item--active):hover {
+.wrapper__main-list > li:not(.wrapper__main-list-item--active) a {display: inline-block;}
+
+.wrapper__main-list > li:not(.wrapper__main-list-item--active) a:hover {
   scale:120%;
   translate:20%;
   filter: contrast(0%) drop-shadow( 0 0 1rem var(--b-highlight-cean));
 }
 
 /* this shoud be done with js */
-.wrapper__main-list > li:not(.wrapper__main-list-item--active):active {
+.wrapper__main-list > li:not(.wrapper__main-list-item--active) a:active {
   animation: li-active 0.9s running linear infinite;
   cursor: wait;
 }
